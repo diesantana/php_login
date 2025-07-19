@@ -34,7 +34,8 @@ if(!empty($loggedUser) && $route == 'login') {
 // Define as rotas da aplicação
 $routes = [
     'login' => 'login.php',
-    'home' => 'home.php'
+    'home' => 'home.php',
+    'logout' => 'logout.php'
 ];
 
 // Verifica se a rota existe
