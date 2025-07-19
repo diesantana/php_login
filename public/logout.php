@@ -1,4 +1,6 @@
 <?php
+// Define a lógica de logout
+
 // Verifica se existe a variável de controle.
 defined('CONTROL') or die("Acesso negado!");
 
