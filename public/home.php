@@ -18,14 +18,11 @@ defined('CONTROL') or die("Acesso negado!");
     <title>Home</title>
 </head>
 <body>
+    <header>
+        <?php require_once 'nav.php'?>
+    </header>
+
     <h2>Bem vindo!</h2>
-    <hr>
-    <p>
-        Usuário: <strong><?= $_SESSION['user']?></strong>
-        <span>
-            <a href="index.php?route=logout">Sair</a>
-        </span>
-    </p>
-    <hr>
+
 </body>
 </html>
