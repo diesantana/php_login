@@ -26,6 +26,11 @@ if (empty($loggedUser)) {
     $route = $_GET['route'] ?? 'home';
 }
 
+// Se usuário logado acessar a rota 'login', redireciona para 'home'
+if(!empty($loggedUser) && $route == 'login') {
+    $route = 'home';
+}
+
 // Define as rotas da aplicação
 $routes = [
     'login' => 'login.php',
@@ -38,6 +43,5 @@ if (!key_exists($route, $routes)) {
     die('Acesso negado'); // Interrompe a execução do script 
 } else {
     // Rota existe
-    require_once $routes[$route];
-    // Importa o arquivo php referente a rota atual. 
+    require_once $routes[$route]; // Importa o arquivo php referente a rota atual. 
 }
