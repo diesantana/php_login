@@ -1,5 +1,8 @@
 <?php
 // Usuários
+/* 
+    Este arquivo vai servir de base de dados para realizar a autenticação dos usuários 
+*/
 return [
     [
         'user' => 'usuario1@gmail.com',
